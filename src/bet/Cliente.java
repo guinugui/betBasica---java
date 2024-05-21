@@ -6,7 +6,6 @@ public class Cliente {
 	private String dataNascimento;
 	private int numero;
 	
-	//private aposta apostaCliente;
 
 	public Cliente(String nome, String dataNascimento, int numero) {
 		this.nome = nome;
@@ -36,14 +35,6 @@ public class Cliente {
 
 	public void setNumero(int numero) {
 		this.numero = numero;
-	}
-
-	public aposta getApostaCliente() {
-		return apostaCliente;
-	}
-
-	public void setApostaCliente(aposta apostaCliente) {
-		this.apostaCliente = apostaCliente;
 	}
 	
 	public String resumoCadastro() {

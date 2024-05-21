@@ -9,6 +9,8 @@ public class Partida {
 	private Equipe mandante;
 	private Equipe visitante;
 	
+	
+	
 	public Partida(String data, int golMandante, int golVisitante, Equipe mandante, Equipe visitante) {
 		this.data = data;
 		this.golMandante = golMandante;
@@ -59,13 +61,16 @@ public class Partida {
 	
 	public String resumoPartida() {
 		return data +
-				" " +
+				" Gol Mandante: " +
 		golMandante +
 		 " " +
-		golVisitante +
+		" Gol Visitante: "
+		+ golVisitante +
 		" " +
+		" Time Mandante: " +
 		mandante.getNome() +
 		" " +
+		" Time Visitante: " +
 		visitante.getNome();
 	}
 	
